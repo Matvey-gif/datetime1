@@ -2,7 +2,6 @@ from datetime import date
 def calculate_age(birth_date):
     today = date.today()
     age = today.year - birth_date.year
- # Проверка, был ли уже день рождения в этом году
     if today < date(today.year, birth_date.month, birth_date.day):
         age -= 1
     return age
